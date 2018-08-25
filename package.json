@@ -1,0 +1,32 @@
+{
+  "name": "transparencia",
+  "version": "1.0.0",
+  "description": "Transparencia es una plataforma en la que la comunidad comparte, difunde, analiza y aprende las acciones gubernamentales tanto legales como económicas. Los expertos en cierta materia le explica a resto de la comunidad, no tan experta, sobre un tema en concreto para poder hacer una sociedad más informada y organizada.",
+  "main": "server.js",
+  "scripts": {
+    "client-install":"npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev":"concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelangarano/Transparencia.git"
+  },
+  "author": "Miguel Langarano",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/miguelangarano/Transparencia/issues"
+  },
+  "homepage": "https://github.com/miguelangarano/Transparencia#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
