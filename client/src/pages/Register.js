@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LoginCard from '../components/LoginCard';
+import RegisterForm from '../components/RegisterForm';
 import { Container, Row, Col } from 'reactstrap';
 
 class Register extends Component {
@@ -11,7 +11,7 @@ class Register extends Component {
         <Container>
           <Row>
             <Col></Col>
-            <Col><LoginCard></LoginCard></Col>
+            <Col><RegisterForm></RegisterForm></Col>
             <Col></Col>
           </Row>
         </Container>
